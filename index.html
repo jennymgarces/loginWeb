@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="styles/login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 </head>
 <body>
 	<header></header>
-	<section class="sec-login">
 		<div class="container">
 			<div class="container-adjust">
 				<div class="login-colors"></div>
@@ -17,8 +18,12 @@
 				<div class="login-form-body">
 					<div class="login-form-div">
 					<form action="#" class="login-form">
-						<div><input class="login-form-user" type="text" placeholder="What's your username"></div>
-						<div><input class="login-form-pass" type="password" placeholder="•••••••••••••••••"></div>
+						<div class="div-form">
+							<span class="focus-input fa fa-user" ></span>
+							<input class="login-forms" type="text" placeholder="What's your username"></div>
+						<div class="div-form">
+							<span class="focus-input fa fa-lock" ></span>
+							<input class="login-forms" type="password" placeholder="•••••••••••••••••"></div>
 						<div>
 							<button class="login-form-btn">Sign me up!</button>
 						</div>				
@@ -29,21 +34,18 @@
 					<span class="form-info-text">or you can skip that and sign up via</span>
 				</div>
 				<div class="network">
-					<a href="#" class="btn-face">
-						<img src="images/icons/icon-face.png">
-						Connect
+					<a href="#" class=" fa-btn btn btn-face">
+							<i class="fa fa-facebook fa-ico"> </i> 
+							<i class="fa-text">Connect</i>  
 					</a>
-					<a href="#" class="btn-twit">
-						<img src="images/icons/icon-twit.png" >
-						Connect
+					<a href="#" class="fa-btn btn btn-twit">
+						<i class="fa fa-twitter fa-ico"> </i> 
+							<i class="fa-text">Connect</i>  
 					</a>	
 				</div>
 				</div>
 				
 			</div>	
-		</div>		
-	</section>
-	<footer></footer>
-	
+		</div>	
 </body>
 </html>

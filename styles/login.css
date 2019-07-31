@@ -2,15 +2,16 @@
   font-family: 'Roboto', sans-serif;
   src: url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); 
 }
+
 /*estilo para toso*/
 * {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
+  margin: 0px; 
+  padding: 0px; 
+  box-sizing: border-box;
 }
 body, html {
-	height: 100%;
-	font-family: 'Roboto', sans-serif;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
   background-color: #616e7f;
 }
 a {
@@ -33,9 +34,9 @@ a:hover {
   text-decoration: none;
 }
 button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 /*class*/
 .container {
@@ -56,7 +57,7 @@ button {
 }
 .container-adjust{
   /*padding: 10px;*/
-  width: 35%;
+  width: 402px;
   background: #fff;
   border-radius: 10px;
   position: relative;
@@ -67,10 +68,6 @@ button {
 {
   width: 100%;
   display: block;
-  background: #000;
-  border-radius: 10px 10px 0px 0px;
-  height: 10px;
-
 }
 .login-form {
   width: 100%;
@@ -80,7 +77,7 @@ button {
   width: 100%;
   display: block;
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-size: 29px;
   color: #c2bfba;
   line-height: 1.2;
   text-align: center;
@@ -93,9 +90,12 @@ button {
 .sign-title{
   background: #f7f7f7;
   padding:  20px;
+  margin-top: 5px;
 }
-.login-form-user {
+
+.login-forms {
   padding: 10px;
+  padding: 0 7px 0 43px;
   box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
   outline: none;
   border: none;
@@ -105,54 +105,30 @@ button {
   font-size: 18px;
   display: block;
   width: 100%;
+  background: transparent;
   background: transparent;
   height: 50px;
 
 }
-.login-form-pass {
-  margin: 20px 0px 0px 0px;
-  padding: 10px;
-  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
-  outline: none;
-  border: none;
-  font-family:'Roboto', sans-serif;
-  color: #333333;
-  line-height: 1.2;
-  font-size: 18px;
-  display: block;
-  width: 100%;
-  background: transparent;
-  height: 50px;
-}
 /*------------sign-------------------*/
 .login-form-btn {
   margin: 30px 0px 30px 0px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 10px;
   width: 100%;
   height: 50px;
   background-color: #f27669;
   border-radius: 8px;
-
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
-
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
-  transition: all 0.4s;
   position: relative;
-  z-index: 1;
   border: none;
-  box-shadow: 0 9px #d86863;
+  box-shadow: 0px 7px 0px 0px #d86863;
 }
 /*******info----------------------------*********/
 .form-info-text
@@ -181,7 +157,8 @@ button {
   align-items: center;
   padding: 15px;
   width: calc((100% - 20px) / 2);
-  height: 70px;
+  height: 62px;
+  width: 187px;
   border-radius: 10px;
   box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
@@ -204,4 +181,94 @@ button {
 .btn-twit{
   color: #fff;
   background-color: #5fc1e6;
+}   
+
+.network{
+   display: flex;
+   justify-content: center;
+}
+
+
+.fa-btn{
+  margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-ico{
+  margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 15px;
+  pointer-events: none;
+  color: #989898;
+}
+
+.focus-input::after {
+  content: attr(data-symbol);
+  font-family: FontAwesome;
+  color: #adadad;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: calc(100% - 20px);
+  bottom: 0;
+  left: 0;
+  padding-left: 30px;
+  margin-top: 3px;
+  padding-bottom: 18px;
+}
+    
+.login-colors:after{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;    
+    background:-webkit-linear-gradient(left,    
+        #c3e27d 0%, #c3e27d 12%, 
+        #f6fccc 12%, #f6fccc 24%,
+        #fbd262 24%, #fbd262 36%,
+        #f47469 36%, #f47469 48%,
+        #db9ac0 48%, #db9ac0 60%,
+        #c79ae2 60%, #c79ae2 72%,
+        #969ccd 72%, #969ccd 84%,
+        #bee083 84%, #bee083 96%,
+        #f6fccc 96%, #f6fccc 99%
+        );
+       background:-moz-linear-gradient(left,     
+        #c3e27d 0%, #c3e27d 12%, 
+        #f6fccc 12%, #f6fccc 24%,
+        #fbd262 24%, #fbd262 36%,
+        #f47469 36%, #f47469 48%,
+        #db9ac0 48%, #db9ac0 60%,
+        #c79ae2 60%, #c79ae2 72%,
+        #969ccd 72%, #969ccd 84%,
+        #bee083 84%, #bee083 96%,
+        #f6fccc 96%, #f6fccc 99%
+        );
+      height: 5px;
+      border-radius: 10px 10px 0px 0px;
+  }
+    
+
+
+.div-form{
+      position: relative;
+      margin-bottom: 10px;
 }
